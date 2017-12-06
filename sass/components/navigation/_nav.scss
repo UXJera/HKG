@@ -1,3 +1,25 @@
 nav {
-  background-color: red;
+  //background-color: rgba(38,63,139,0.85);
+  background-color: rgb(38,63,139);
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  flex: 1;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  //align-items: flex-end;
+  ul {
+    display: flex;
+    list-style: none;
+    li {
+      padding: 0 1em;
+    }
+  }
 }
