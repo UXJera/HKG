@@ -1,0 +1,16 @@
+.brand {
+  display: flex;
+  flex: 1;
+  font-family: Katibeh, Serif;
+  a {
+    font-size: 3em;
+    padding-left: 1em;
+    margin-bottom: .25em;
+    color:white;
+    text-decoration: none;
+    @include transition;
+    &:hover {
+      color: $blue-light;
+    }
+  }
+}
