@@ -1,0 +1,10 @@
+.carousel-container {
+  background: red;
+    padding: .5em 1em;
+}
+
+@media screen and (min-width: 992px) {
+  .carousel-container {
+    max-width: 70%;
+  }
+}

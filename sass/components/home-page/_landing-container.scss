@@ -1,0 +1,10 @@
+.landing-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .landing-container {
+    flex-direction: row;
+  }
+}
