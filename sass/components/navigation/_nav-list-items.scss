@@ -1,33 +1,61 @@
-.nav-list {
-  display: flex;
-  flex-direction: row;
-  padding-right: 1em;
-  ul {
-    display: flex;
-    list-style: none;
-    margin-bottom: 0;
-    li {
-      padding: 0 .5em;
-      border: 1px solid white;
-      margin: 0 .25em;
-      border-radius: 5px;
-      font-size: 2em;
-      font-family: Katibeh, serif;
-      display: flex;
-      @include transition;
-      background: white;
+// .nav-list {
+//   flex-direction: row;
+//   padding-right: 1em;
+//   ul {
+//     display: flex;
+//     list-style: none;
+//     margin-bottom: 0;
+//     li {
+//       padding: 0 .5em;
+//       border: 1px solid white;
+//       margin: 0 .25em;
+//       border-radius: 5px;
+//       font-size: 2em;
+//       font-family: Katibeh, serif;
+//       display: flex;
+//       @include transition;
+//       background: white;
+//
+//       &:hover {
+//         background: $blue-light;
+//         //border: 1px solid $blue;
+//         a{
+//           color:white;
+//         }
+//       }
+//       a {
+//         margin-bottom: .25em;
+//         text-decoration: none;
+//         line-height: 1.25em;
+//         margin-top: .25em; // Fix for Mac
+//       }
+//     }
+//   }
+// }
 
+.navbar-nav {
+  li {
+    margin: .25em;
+    a {
+      font-size: 1.25em;
+      text-decoration: none;
+      color: white;
       &:hover {
-        background: $blue-light;
-        //border: 1px solid $blue;
-        a{
-          color:white;
-        }
+        color: $blue-light;  
       }
+    }
+  }
+}
+
+
+@media (min-width: 992px) {
+  .navbar-toggleable-md .navbar-nav {
+    li {
+      margin: 0 1em;
       a {
-        margin-bottom: .25em;
-        text-decoration: none;
-        line-height: 1.25em;
+        font-size: 1.5em;
+        font-style: none;
+        @include transition;
       }
     }
   }

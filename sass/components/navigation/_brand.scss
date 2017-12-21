@@ -3,14 +3,21 @@
   flex: 1;
   font-family: Katibeh, Serif;
   a {
-    font-size: 3em;
-    padding-left: 1em;
-    margin-bottom: .25em;
+    font-size: 2em;
+    // padding-left: 1em;
+    // margin-bottom: .25em;
+    // margin-top: .25em;  // Fix for Mac
     color:white;
     text-decoration: none;
     @include transition;
     &:hover {
       color: $blue-light;
     }
+  }
+}
+
+@media (min-width: 992px) {
+  .brand a {
+    font-size: 3em;
   }
 }
