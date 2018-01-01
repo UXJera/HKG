@@ -1,5 +1,15 @@
 .promotional-banner-container {
   display: flex;
   justify-content: center;
-  background: black;
+  background: linear-gradient(
+                  rgba(0, 0, 0, 0.65),
+                  rgba(0, 0, 0, 0.65)
+                ),
+               center
+               url('/assets/images/banner.jpg');
+  // background-image: url('/assets/images/banner.jpg');
+  background-size: cover;
+  img {
+    max-height: 200px;
+  }
 }
