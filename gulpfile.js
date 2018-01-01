@@ -3,12 +3,15 @@ var gulp    = require('gulp'),
     prefix  = require('gulp-autoprefixer'),
     minCss  = require('gulp-minify-css'),
     rename  = require('gulp-rename'),
-    concat  = require('gulp-concat');
+    concat  = require('gulp-concat'),
+    jsmin   = require('gulp-jsmin'),
     map     = require('gulp-sourcemaps')
 
 var config = {
   srcCss    : 'sass/**/*.scss',
-  buildCss  : 'css'
+  buildCss  : 'css',
+  srcJs     : 'js-dev/*.js',
+  buildJs   : 'js'
 }
 
 gulp.task('build-css', function(cb) {
@@ -31,8 +34,20 @@ gulp.task('build-css', function(cb) {
    cb()
 })
 
+
+gulp.task('compile-js', function(cb) {
+  gulp.src(config.srcJs)
+    .pipe(jsmin())
+		.pipe(concat('scripts.js'))  // File to concat to
+		.pipe(gulp.dest('js')); // Destination of file
+
+    console.log("JS Compiled");
+
+  cb()
+});
+
 gulp.task('watch', function(cb) {
    gulp.watch(config.srcCss, ['build-css'])
 })
 
-gulp.task('default', ['build-css', 'watch'])
+gulp.task('default', ['build-css', 'compile-js', 'watch'])
