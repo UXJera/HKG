@@ -1,0 +1,59 @@
+h3 {
+  text-align: center;
+}
+
+.information-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background: transparentize(blue, .6);
+  padding: .5em 1em;
+  table {
+    width: 100%;
+    td:first-child{
+      font-weight: 700;
+      text-align: right;
+    }
+    td:nth-of-type(2){
+      padding-left: 2em;
+      margin-right: 2em;
+    }
+  }
+
+  .hours-container,
+  .location-container{
+    max-width: 45vw;
+    flex: 1;
+  }
+  
+  .location-container {
+    padding-top: 1em;
+    p {
+      text-align: center;
+    }
+  }
+}
+
+.google-map-container {
+  width: 100%;
+  iframe {
+    width: 100%;
+    height: 45vh;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .information-container{
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .google-map-container {
+    width: 100%;
+    iframe {
+      width: 100%;
+      height: 300px;
+    }
+  }
+}

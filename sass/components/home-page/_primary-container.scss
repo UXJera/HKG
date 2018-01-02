@@ -1,0 +1,14 @@
+.primary-container {
+
+}
+
+.primary-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .primary-container {
+    flex-direction: row;
+  }
+}
