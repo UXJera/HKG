@@ -1,12 +1,15 @@
+@import './core-styling/fonts';
+
 body {
   display: flex;
   flex-direction: column;
   //background-color: blue;
-  font-family: Lato, sans-serif;
+  font-family: $font-paragraphs, 'Open Sans', Lato, sans-serif;
   background-color: #eee;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Katibeh, Lato, Serif;
+  font-family: $font-headers, Lato, Serif;
+  text-align: center;
 }

@@ -1,6 +1,8 @@
 .promotional-banner-container {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
   background: linear-gradient(
                   rgba(0, 0, 0, 0.65),
                   rgba(0, 0, 0, 0.65)
@@ -9,7 +11,26 @@
                url('/assets/images/banner.jpg');
   // background-image: url('/assets/images/banner.jpg');
   background-size: cover;
+  h3 {
+    padding: 10px;
+    width: 100%;
+    background: black;
+    @include transition;
+    margin-bottom: 0;
+  }
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: $blue;
+    }
+  }
   img {
     max-height: 200px;
+
   }
 }

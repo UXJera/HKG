@@ -1,10 +1,10 @@
 .facebook-widget-container {
-  background: transparentize(blue, .6);
+  //background: transparentize(blue, .6);
   padding: .5em 1em;
   .fb-page.fb_iframe_widget {
     display:flex;
     justify-content: center;
-    background:red;
+    //background:red;
   }
 }
 

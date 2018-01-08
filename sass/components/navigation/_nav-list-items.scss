@@ -1,48 +1,17 @@
-// .nav-list {
-//   flex-direction: row;
-//   padding-right: 1em;
-//   ul {
-//     display: flex;
-//     list-style: none;
-//     margin-bottom: 0;
-//     li {
-//       padding: 0 .5em;
-//       border: 1px solid white;
-//       margin: 0 .25em;
-//       border-radius: 5px;
-//       font-size: 2em;
-//       font-family: Katibeh, serif;
-//       display: flex;
-//       @include transition;
-//       background: white;
-//
-//       &:hover {
-//         background: $blue-light;
-//         //border: 1px solid $blue;
-//         a{
-//           color:white;
-//         }
-//       }
-//       a {
-//         margin-bottom: .25em;
-//         text-decoration: none;
-//         line-height: 1.25em;
-//         margin-top: .25em; // Fix for Mac
-//       }
-//     }
-//   }
-// }
-
 .navbar-nav {
+  width: 100vw;
   li {
-    margin: .25em;
+    padding: .25em 0;
+    text-align: center;
+    @include transition;
+    &:hover {
+      background: $blue-light;
+    }
     a {
+      font-family: $font-headers;
       font-size: 1.25em;
       text-decoration: none;
       color: white;
-      &:hover {
-        color: $blue-light;  
-      }
     }
   }
 }
@@ -50,12 +19,19 @@
 
 @media (min-width: 992px) {
   .navbar-toggleable-md .navbar-nav {
+    width: auto;
     li {
       margin: 0 1em;
+      &:hover {
+        background: transparent;
+      }
       a {
         font-size: 1.5em;
         font-style: none;
         @include transition;
+        &:hover {
+          color: $blue-light;
+        }
       }
     }
   }
