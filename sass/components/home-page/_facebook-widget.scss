@@ -4,9 +4,13 @@
   .fb-page.fb_iframe_widget {
     display:flex;
     justify-content: center;
-    //background:red;
+    span {
+      box-shadow: 0 0 10px 5px white;
+    }
   }
 }
+
+
 
 @media screen and (min-width: 992px) {
   .facebook-widget-container{
