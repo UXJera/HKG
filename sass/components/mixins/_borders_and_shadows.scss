@@ -29,6 +29,9 @@ $border-radius: 10px;
 @mixin box-shadow-alt-2 {
   box-shadow: 5px 5px 5px #111;
 }
+@mixin box-shadow-iframe {
+  box-shadow: 0 0 10px 5px white;
+}
 
 @mixin border-shadow {
   border-radius: $border-radius;

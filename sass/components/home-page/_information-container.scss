@@ -6,10 +6,12 @@ h3 {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  //background: transparentize(blue, .6);
   padding: .5em 1em;
   table {
     width: 100%;
+    td{
+      color: #aaa;
+    }
     td:first-child{
       font-weight: 700;
       text-align: right;
@@ -29,6 +31,14 @@ h3 {
   .location-container {
     p {
       text-align: center;
+      a {
+        color: #aaa;
+        @include transition;
+        text-decoration: none;
+        &:hover {
+          color: $blue-light;
+        }
+      }
     }
   }
 }
@@ -38,7 +48,7 @@ h3 {
   iframe {
     width: 100%;
     height: 45vh;
-    box-shadow: 0 0 10px 5px white;
+    @include box-shadow-iframe;
   }
 }
 

@@ -10,7 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include border-shadow;
+    border-radius: 10px;
+    @include box-shadow-iframe;
     .carousel-item img {
       max-width: 600%;
       max-height: 480px;
