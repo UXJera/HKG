@@ -5,12 +5,10 @@
   justify-content: center;
 
   .carousel {
-    background: black;
-    padding: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 10px;
+    overflow: hidden;
+    // border-radius: 5px;
     @include box-shadow-iframe;
     .carousel-item img {
       max-width: 600%;
@@ -24,14 +22,14 @@
         opacity: .4;
       }
     }
-    .carousel-control-prev {
-      border-top-left-radius: 10px;
-      border-bottom-left-radius: 10px;
-    }
-    .carousel-control-next {
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
-    }
+    // .carousel-control-prev {
+    //   border-top-left-radius: 5px;
+    //   border-bottom-left-radius: 5px;
+    // }
+    // .carousel-control-next {
+    //   border-top-right-radius: 5px;
+    //   border-bottom-right-radius: 5px;
+    // }
   }
 }
 
