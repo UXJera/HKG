@@ -6,9 +6,6 @@
     display: flex;
     align-items: center;
     font-size: 2em;
-    // padding-left: 1em;
-    // margin-bottom: .25em;
-    // margin-top: .25em;  // Fix for Mac
     color:white;
     text-decoration: none;
     @include transition;
@@ -18,6 +15,14 @@
     img {
       margin-right: .5em;
     }
+  }
+}
+
+@media (max-width: 550px) {
+  .brand {
+    padding-right: 15vw;
+    align-items: center;
+    text-align: center;
   }
 }
 

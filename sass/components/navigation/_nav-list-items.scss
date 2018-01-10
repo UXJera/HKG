@@ -1,5 +1,6 @@
 .navbar-nav {
   width: 100vw;
+  border-top: 2px solid white;
   li {
     padding: .25em 0;
     text-align: center;
@@ -18,11 +19,15 @@
 
 
 @media (min-width: 992px) {
+  .navbar-nav {
+    width: 100vw;
+    border-top: none;
+  }
   .navbar-toggleable-md .navbar-nav {
     width: auto;
     li {
       margin: 0 1em;
-      &:hover { 
+      &:hover {
         background: transparent;
       }
       a {
