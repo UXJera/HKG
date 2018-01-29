@@ -30,7 +30,7 @@ $border-radius: 10px;
   box-shadow: 5px 5px 5px #111;
 }
 @mixin box-shadow-iframe {
-  box-shadow: 0 0 10px 5px white;
+  box-shadow: 0 0 10px 5px #222; // White when on dark color scheme
 }
 
 @mixin border-shadow {
