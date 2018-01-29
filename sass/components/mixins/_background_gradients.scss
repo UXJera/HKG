@@ -25,9 +25,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
   background: linear-gradient(to bottom, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+@mixin bg-gradient {
+  background: #005AA7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #005AA7 0%, #FFFDE4 25%, #FFFDE4 75%, #005AA7 100%);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #005AA7 0%, #FFFDE4 25%, #FFFDE4 75%, #005AA7 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+//background: -moz-linear-gradient(left, #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%); /* FF3.6-15 */
+
 @mixin nav-bg-gradient {
   background: #0575E6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #021B79, $blue);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #021B79, $blue); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- //#021B79, #0575E6
+  background: -webkit-linear-gradient(to top, #021B79, $blue);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #021B79, $blue); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   //#021B79, #0575E6
 }

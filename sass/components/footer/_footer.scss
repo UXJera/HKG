@@ -1,6 +1,4 @@
 footer {
-  //margin-top: 1em;
-  //background-color: $blue;
   @include nav-bg-gradient;
   display: flex;
   align-items: center;
@@ -9,12 +7,14 @@ footer {
   p {
     font-family: $font-headers;
     padding: 1em;
-    color: white;
+    color: $light;
     margin: 0;
     flex: 1;
     }
   a {
     @include transition;
+    color: white;
+    text-decoration: none;
     &:hover {
       color: $blue-light;
       }
