@@ -1,0 +1,16 @@
+@import 'fonts';
+@import '../mixins/color';
+
+// CHANGE BODY STYLING: DARK BACKGROUND AND LIGHT COLOR FONTS
+
+body {
+  background-color: $light;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $dark;
+}
+
+p, a {
+  color: $dark;
+}

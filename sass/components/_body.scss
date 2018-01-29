@@ -3,18 +3,16 @@
 // CHANGE BODY STYLING: DARK BACKGROUND AND LIGHT COLOR FONTS
 
 body {
-  // display: flex;
-  // flex-direction: column;
   font-family: $font-paragraphs, 'Open Sans', Lato, sans-serif;
-  //background-color: #eee;
-  background-color: black;
+  margin: 0;
+}
+
+main {
+  min-height: 80vh;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-headers, Lato, Serif;
-  text-align: center;
-  color: white;
+  text-align: center;;
 }
-
-p, a { color: white;}

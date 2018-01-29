@@ -1,0 +1,31 @@
+.product-table {
+  width: 100%;
+  background: red;
+  display: flex;
+  flex-direction: column;
+  tbody, thead {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    tr {
+      display: flex;
+    }
+    tr:nth-of-type(odd){
+      background: green;
+    }
+    tr:nth-of-type(even) {
+      background: blue;
+    }
+    td:nth-of-type(1) {
+      border: 1px solid black;
+      flex: 1;
+    }
+    td:nth-of-type(2){
+      flex:4;
+    }
+    td:nth-of-type(3){
+      flex: 1;
+    }
+  }
+  //thead { display: none; }
+}
