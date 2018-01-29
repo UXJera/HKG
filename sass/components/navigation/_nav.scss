@@ -1,6 +1,7 @@
 nav {
   //background-color: rgba(38,63,139,0.85);
-  background-color: $blue;
+  //background-color: $blue;
+  @include nav-bg-gradient;
   display: flex;
   text-decoration: none;
   align-items: center;

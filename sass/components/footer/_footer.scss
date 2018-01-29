@@ -1,6 +1,7 @@
 footer {
-  margin-top: 1em;
-  background-color: $blue;
+  //margin-top: 1em;
+  //background-color: $blue;
+  @include nav-bg-gradient;
   display: flex;
   align-items: center;
   justify-content: space-between;
