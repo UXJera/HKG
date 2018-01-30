@@ -10,12 +10,11 @@
   .product-table-item {
     display: flex;
     flex-direction: column;
-    padding: .5em 0;
-    &:nth-of-type(odd){background: green;}
-    &:nth-of-type(even){background: blue;}
+    padding: 1em 0;
+    &:nth-of-type(odd){background: $light;}
+    &:nth-of-type(even){background: white;}
     .product-table-logo {
       display: flex;
-      //background: red;
       justify-content: center;
       align-items: center;
       flex: 1;
@@ -31,16 +30,19 @@
         font-weight: 700;
       }
     }
-    .product-table-website {
-      flex: 1;
+    .product-table-photo {
+      flex: 2;
       text-align: center;
+      img {
+        max-width: 300px;
+        max-height: 200px;
+      }
     }
   }
   thead { display: none; }
 }
 
-// ADD MEDIA QUERIES
-@media (min-width: 700px) {
+@media (min-width: 890px) {
 
   .product-table tbody, thead {
     .product-table-item {

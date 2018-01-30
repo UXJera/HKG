@@ -7,15 +7,14 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
-    // border-radius: 5px;
     @include box-shadow-iframe;
-    .carousel-inner { background: black;}
+    .carousel-inner { background: $blue;}
     .carousel-item img {
       max-width: 600%;
       max-height: 480px;
     }
     .carousel-control-next, .carousel-control-prev {
-      background: black;
+      background: $blue;
       @include transition;
       opacity: .15;
       &:hover {

@@ -15,5 +15,12 @@ main {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-headers, Lato, Serif;
-  text-align: center;;
+  text-align: center;
+}
+@media (min-width: 1440px) {
+  body {
+    font-family: $font-paragraphs, 'Open Sans', Lato, sans-serif;
+    margin: 0;
+    @include bg-gradient-lg;
+  }
 }

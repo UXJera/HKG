@@ -10,7 +10,7 @@ h3 {
   table {
     width: 100%;
     td{
-      color: #aaa;
+      color: $dark;
     }
     td:first-child{
       font-weight: 700;
@@ -22,21 +22,28 @@ h3 {
     }
   }
 
+  .store-operations-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
   .hours-container,
   .location-container{
     //max-width: 45vw;
     flex: 1;
+    margin: .5em 0;
   }
 
   .location-container {
     p {
       text-align: center;
       a {
-        color: #aaa;
+        color: $dark;
         @include transition;
-        text-decoration: none;
+        //text-decoration: none;
         &:hover {
-          color: $blue-light;
+          color: $blue
         }
       }
     }
