@@ -11,14 +11,15 @@ h3 {
     width: 100%;
     td{
       color: $dark;
+      font-size: 18px;
     }
     td:first-child{
       font-weight: 700;
       text-align: right;
     }
     td:nth-of-type(2){
-      padding-left: 2em;
-      margin-right: 2em;
+      padding-left: 1em;
+      margin-right: 1em;
     }
   }
 
@@ -29,15 +30,19 @@ h3 {
   }
 
   .hours-container,
-  .location-container{
-    //max-width: 45vw;
+  .location-container,
+  .phone-container{
     flex: 1;
     margin: .5em 0;
   }
-
-  .location-container {
+  .phone-container {
+    font-weight: 700;
+  }
+  .location-container, .phone-container {
     p {
       text-align: center;
+      margin-bottom: 0;
+      font-size: 18px;
       a {
         color: $dark;
         @include transition;
@@ -68,7 +73,7 @@ h3 {
   }
 
   .location-container {
-    padding-top: 1em;
+    //padding-top: 1em;
   }
 
   .google-map-container {

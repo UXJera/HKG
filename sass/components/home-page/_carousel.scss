@@ -1,7 +1,11 @@
 .carousel-container {
   padding: .5em 1em;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  h2 {
+    font-size: 3em;
+  }
 
   .carousel {
     display: flex;
