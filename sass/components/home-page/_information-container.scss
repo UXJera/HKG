@@ -35,14 +35,13 @@ h3 {
     flex: 1;
     margin: .5em 0;
   }
-  .phone-container {
-    font-weight: 700;
-  }
+
   .location-container, .phone-container {
     p {
       text-align: center;
       margin-bottom: 0;
       font-size: 18px;
+      font-weight: 700;
       a {
         color: $dark;
         @include transition;

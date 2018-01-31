@@ -4,9 +4,10 @@ footer {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  flex-direction: column;
   p {
     font-family: $font-headers;
-    padding: 1em;
+    padding: .5em 0;
     color: $light;
     margin: 0;
     flex: 1;
@@ -34,6 +35,15 @@ footer {
   footer {
     p {
       flex: initial;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+  flex-direction: row;
+  p {
+    padding: 1em;
     }
   }
 }

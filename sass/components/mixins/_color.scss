@@ -1,7 +1,9 @@
 //			SASS MAIN COLOR SHORTHANDS		//
 
 $blue: rgb(38,63,139);
-$blue-light: rgb(107, 163, 255);
+//$blue-light: rgb(107, 163, 255);
+$blue-light: lighten($blue, 55%);
+$blue-light-2: lighten($blue, 65%);
 //$blue-light:  #00A8E8;
 
 $dark: #222;
