@@ -3,6 +3,19 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+
+  .landing-product-logos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    //padding: 10px 0;
+    img {
+      max-height: 50px;
+      //width: 100px;
+      padding: 2.5px 10px;
+    }
+  }
+
   h2 {
     font-size: 3em;
   }

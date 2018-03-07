@@ -10,7 +10,7 @@
   .product-table-item {
     display: flex;
     flex-direction: column;
-    padding: 1em 0;
+    padding: .5em 1em;
     &:nth-of-type(odd){background: $blue-light;}
     &:nth-of-type(even){background: $blue-light-2;}
     .product-table-logo {
