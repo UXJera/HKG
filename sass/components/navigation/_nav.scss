@@ -1,13 +1,13 @@
 nav {
-  //background-color: rgba(38,63,139,0.85);
-  //background-color: $blue;
   @include nav-bg-gradient;
   display: flex;
   text-decoration: none;
-  align-items: center;
   min-height: 7.5vh;
   li {
     font-family: Katibeh, Serif;
+  }
+  &.navbar {
+    padding: 0;
   }
   button.navbar-toggler {
     background: rgba(255,255,255,.7);
