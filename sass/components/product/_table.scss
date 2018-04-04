@@ -11,8 +11,8 @@
     display: flex;
     flex-direction: column;
     padding: .5em 1em;
-    &:nth-of-type(odd){background: $blue-light;}
-    &:nth-of-type(even){background: $blue-light-2;}
+    &:nth-of-type(odd){background: $blue-light-bg;}
+    &:nth-of-type(even){background: $blue-light-bg-2;}
     .product-table-logo {
       display: flex;
       justify-content: center;
@@ -35,10 +35,14 @@
     }
     .product-table-photo {
       flex: 2;
-      text-align: center;
+      text-align: right;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       img {
-        max-width: 300px;
+        width: 300px;
         max-height: 200px;
+        box-shadow: 0 0 5px  black;
       }
     }
   }

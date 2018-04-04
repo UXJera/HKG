@@ -25,10 +25,11 @@
     justify-content: center;
     overflow: hidden;
     @include box-shadow-iframe;
+    .carousel-inner > .item > img { margin: 0 auto;}
     .carousel-inner { background: $blue;}
     .carousel-item img {
-      max-width: 600%;
-      max-height: 480px;
+      width: 100%;
+      height: 100%;
     }
     .carousel-control-next, .carousel-control-prev {
       background: $blue;
@@ -42,6 +43,12 @@
 }
 
 @media screen and (min-width: 992px) {
+  .carousel-container {
+    flex: 2;
+  }
+}
+
+@media screen and (width: 992px) {
   .carousel-container {
     flex: 2;
   }

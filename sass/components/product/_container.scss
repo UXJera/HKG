@@ -1,0 +1,23 @@
+.products-container {
+  h1 {
+    padding-top: .5em;
+  }
+  h4 {
+    padding: 0 10%;
+    &:first-of-type{
+      margin: .5em 0 1em;
+    }
+    &:last-of-type{
+      color: $dark;
+      margin: 1em 0;
+    }
+  }
+  a {
+    padding-left: .5em;
+    color: $blue-light-text;
+    @include transition;
+    &:hover {
+      color: $blue-light;
+    }
+  }
+}
