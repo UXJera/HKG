@@ -17,7 +17,7 @@
     }
     .brand-name {
       span {
-        font-size: 2.5em;
+        font-size: 2.25em;
         padding-left: .15em;
         padding-right: .05em;
       }
@@ -35,18 +35,18 @@
 
 @media (min-width:600px) {
   .brand a {
-    font-size: 1.75em;
+    font-size: 1.55em;
   }
 }
 
 @media (min-width: 992px) {
   .brand a {
-    font-size: 1.5em;
+    font-size: 1.15em;
   }
 }
 
 @media (min-width: 1220px) {
   .brand a {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }

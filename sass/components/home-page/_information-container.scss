@@ -36,6 +36,10 @@ h3 {
     margin: .5em 0;
   }
 
+  .closed-hours {
+    color: $red;
+  }
+
   .location-container, .phone-container {
     p {
       text-align: center;
@@ -43,11 +47,11 @@ h3 {
       font-size: 18px;
       font-weight: 700;
       a {
-        color: $dark;
+        color: $blue-light;
         @include transition;
-        //text-decoration: none;
+        text-decoration: underline;
         &:hover {
-          color: $blue
+          color: $light;
         }
       }
     }
