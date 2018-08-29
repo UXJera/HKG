@@ -1,0 +1,25 @@
+###########################
+## Bootstrap (to remove) ##
+###########################
+Fixed Nav
+Collapse Nav // Hamburger Nav
+Carousel
+"Container"
+
+	1) What problem does this solve?
+		-> Increased Site Speed due to not having to load an entire library
+	2) How does this help the user?
+		-> A more streamlined experience
+	3) Why is this better than the alternative?
+		-> Faster site performance + moving towards best practices
+
+###############
+## Fun Todos ##
+###############
+
+Store Hours change color w/ Time
+	* Check current Date Time against a set time duration (most likely done w/ MomentJS)
+
+Add spinner for Calendar + Gallery (can you do that w. iframe?)
+
+Add FontAwesome glyphs to Nav Menu
