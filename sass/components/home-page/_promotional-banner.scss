@@ -1,33 +1,40 @@
 .promotional-banner-container {
-  background: linear-gradient(
-                  rgba(0, 0, 0, 0.65),
-                  rgba(0, 0, 0, 0.65)
-                ),
-               center
-               url('/assets/images/banner/banner.jpg');
-  background-size: cover;
-  h3 {
-    padding: 10px;
-    width: 100%;
-    background: transparentize(black, .5);
-    @include transition;
-    margin-bottom: 0;
-  }
-  a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+  display: none; // If below 400px, do not show
+}
+
+@media screen and (min-width: 400px) {
+  .promotional-banner-container {
+    display: block;
+    background: linear-gradient(
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)
+                  ),
+                 center
+                 url('/assets/images/banner/banner.jpg');
+    background-size: cover;
     h3 {
-      color: white;
-      &:hover {
-        color: $blue;
+      padding: 10px;
+      width: 100%;
+      background: transparentize(black, .5);
+      @include transition;
+      margin-bottom: 0;
+    }
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      h3 {
+        color: white;
+        &:hover {
+          color: $blue;
+        }
       }
     }
-  }
-  img {
-    max-height: 200px;
-    max-width: 95vw;
+    img {
+      max-height: 200px;
+      max-width: 95vw;
+    }
   }
 }
