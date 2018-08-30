@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding-bottom: .5em;
     //padding: 10px 0;
     img {
       max-height: 50px;
@@ -19,6 +20,9 @@
 
   h2 {
     font-size: 3em;
+  }
+  h4 {
+    padding-top: 1em;
   }
 
   .carousel {

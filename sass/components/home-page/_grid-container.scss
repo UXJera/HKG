@@ -1,0 +1,12 @@
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1em;
+}
+
+@media (min-width: 992px) {
+  .grid-container {
+		display: grid;
+		grid-template-columns: 67% 33%;
+	}
+}
