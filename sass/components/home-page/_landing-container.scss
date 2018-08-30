@@ -1,22 +1,16 @@
-.container {
-	padding-top: 75px;
-}
-
-.landing-container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 1em;
-}
+// .container {
+// 	padding-top: 75px;
+// }
+// 
+// .landing-container {
+//   display: flex;
+//   flex-direction: column;
+//   padding-top: 1em;
+// }
 
 @media (min-width: 992px) {
-	.grid-container {
-		display: grid;
-		grid-template-columns: 66% 33%;
-	}
-
-  .landing-container {
-		// display: grid;
-		// grid-template-columns: 70% 30%;
-    // flex-direction: row;
-  }
+	// .grid-container {
+	// 	display: grid;
+	// 	grid-template-columns: 66% 33%;
+	// }
 }

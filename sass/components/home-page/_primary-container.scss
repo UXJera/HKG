@@ -1,16 +1,12 @@
-.primary-container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 1em;
-  h1 {
-    text-align: center;
-  }
-
-}
-
-@media (min-width: 992px) {
-  .grid-container {
-		display: grid;
-		grid-template-columns: 66% 32.5%;
-	}
-}
+// .primary-container {
+//   display: flex;
+//   flex-direction: column;
+//   padding-top: 1em;
+// }
+//
+// @media (min-width: 992px) {
+//   .grid-container {
+// 		display: grid;
+// 		grid-template-columns: 66% 32.5%;
+// 	}
+// }
