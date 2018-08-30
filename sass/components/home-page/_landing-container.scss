@@ -9,8 +9,14 @@
 }
 
 @media (min-width: 992px) {
-  .landing-container {
+	.grid-container {
+		display: grid;
+		grid-template-columns: 66% 33%;
+	}
 
-    flex-direction: row;
+  .landing-container {
+		// display: grid;
+		// grid-template-columns: 70% 30%;
+    // flex-direction: row;
   }
 }

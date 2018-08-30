@@ -9,7 +9,8 @@
 }
 
 @media (min-width: 992px) {
-  .primary-container {
-    flex-direction: row;
-  }
+  .grid-container {
+		display: grid;
+		grid-template-columns: 66% 32.5%;
+	}
 }
